@@ -40,7 +40,7 @@ Below is the list of all available errors:
 | Name                  | Code | Default message  |
 |:----------------------|:-----|:-----------------|
 | BadRequestError       | 400  | Bad Request      |
-| ConflictError         | 410  | Conflict         |
+| ConflictError         | 409  | Conflict         |
 | ForbiddenError        | 403  | Forbidden        |
 | GoneError             | 410  | Gone             |
 | NotFoundError         | 404  | Not Found        |
