@@ -11,6 +11,7 @@ module.exports = {
   GoneError: require('./errors/gone-error'),
   HttpError: require('./errors/http-error'),
   NotFoundError: require('./errors/not-found-error'),
+  ServiceUnavailableError: require('./errors/service-unavailable-error'),
   UnauthorizedError: require('./errors/unauthorized-error'),
   ValidationFailedError: require('./errors/validation-failed-error')
 };

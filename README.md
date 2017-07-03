@@ -37,15 +37,16 @@ try {
 
 Below is the list of all available errors:
 
-| Name                  | Code | Default message  |
-|:----------------------|:-----|:-----------------|
-| BadRequestError       | 400  | Bad Request      |
-| ConflictError         | 409  | Conflict         |
-| ForbiddenError        | 403  | Forbidden        |
-| GoneError             | 410  | Gone             |
-| NotFoundError         | 404  | Not Found        |
-| UnauthorizedError     | 401  | Unauthorized     |
-| ValidationFailedError | 400  | ValidationFailed |
+| Name                    | Code | Default message     |
+|:------------------------|:-----|:--------------------|
+| BadRequestError         | 400  | Bad Request         |
+| ConflictError           | 409  | Conflict            |
+| ForbiddenError          | 403  | Forbidden           |
+| GoneError               | 410  | Gone                |
+| NotFoundError           | 404  | Not Found           |
+| ServiceUnavailableError | 503  | Service Unavailable |
+| UnauthorizedError       | 401  | Unauthorized        |
+| ValidationFailedError   | 400  | Validation Failed   |
 
 ## Usage
 
