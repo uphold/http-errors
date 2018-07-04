@@ -1,7 +1,0 @@
-pipeline:
-  test:
-    image: node:7-alpine
-    commands:
-      - yarn --ignore-optional --no-emoji --no-progress
-      - yarn lint
-      - yarn cover
