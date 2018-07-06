@@ -8,7 +8,7 @@
   "scripts": {
     "changelog": "github-changelog-generator $npm_package_options_changelog --future-release=v$npm_package_version > CHANGELOG.md",
     "cover": "yarn test -- --coverage",
-    "lint": "eslint --cache bin src test",
+    "lint": "eslint --cache src test",
     "release": "npm version $1 -m 'Release %s'",
     "test": "jest --config jest.json",
     "version": "yarn changelog && git add CHANGELOG.md"
@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@uphold/github-changelog-generator": "0.4.1",
-    "eslint": "3.19.0",
-    "eslint-config-seegno": "9.0.0",
+    "eslint": "^5.0.1",
+    "eslint-config-uphold": "^0.1.1",
     "jest": "20.0.4",
     "pre-commit": "1.2.2"
   },

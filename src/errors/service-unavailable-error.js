@@ -11,7 +11,6 @@ const HttpError = require('./http-error');
  */
 
 module.exports = class ServiceUnavailableError extends HttpError {
-
   /**
    * Constructor.
    */
