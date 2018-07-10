@@ -137,4 +137,4 @@ $ yarn release [<version> | major | minor | patch]
 
 ## License
 
-[Private](/LICENSE)
+MIT
