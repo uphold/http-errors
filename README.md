@@ -4,20 +4,16 @@ This module provides a set of errors based on [standard-http-error](https://www.
 
 ## Setup
 
-Add **@uphold/http-errors** to *package.json* dependencies with the latest version:
-
-```json
-{
-  "dependencies": {
-    "@uphold/http-errors": "git+ssh://git@github.com/uphold/http-errors#v1.0.0"
-  }
-}
-```
-
-Install it afterwards:
+Install **@uphold/http-errors** with yarn:
 
 ```sh
-$ yarn
+$ yarn add @uphold/http-errors
+```
+
+Alternatively, with npm:
+
+```sh
+$ npm i @uphold/http-errors
 ```
 
 ## Errors
@@ -137,4 +133,4 @@ $ yarn release [<version> | major | minor | patch]
 
 ## License
 
-[Private](/LICENSE)
+MIT
