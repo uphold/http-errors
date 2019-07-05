@@ -5,6 +5,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "author": "Uphold",
   "main": "src/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "changelog": "github-changelog-generator --future-release=v$npm_package_version > CHANGELOG.md",
     "cover": "yarn test -- --coverage",
