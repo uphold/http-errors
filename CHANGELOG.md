@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.2.1](https://github.com/uphold/http-errors/releases/tag/v1.2.1) (2019-10-30)
+- Update .npmignore and license [\#9](https://github.com/uphold/http-errors/pull/9) ([cristianooliveira](https://github.com/cristianooliveira))
+- Add TypeScript typings [\#8](https://github.com/uphold/http-errors/pull/8) ([rplopes](https://github.com/rplopes))
+
 ## [v1.2.0](https://github.com/uphold/http-errors/releases/tag/v1.2.0) (2018-07-11)
 - Prepare to open source [\#7](https://github.com/uphold/http-errors/pull/7) ([rplopes](https://github.com/rplopes))
 - Update @uphold/github-changelog-generator [\#6](https://github.com/uphold/http-errors/pull/6) ([rplopes](https://github.com/rplopes))
