@@ -2,7 +2,7 @@
   "name": "@uphold/http-errors",
   "version": "1.2.0",
   "description": "Set of errors based on http-standard-error",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "author": "Uphold",
   "main": "src/index.js",
   "types": "types/index.d.ts",
