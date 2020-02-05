@@ -1,3 +1,4 @@
+export * from './errors/assertion-failed-error';
 export * from './errors/bad-request-error';
 export * from './errors/conflict-error';
 export * from './errors/forbidden-error';

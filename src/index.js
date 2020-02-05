@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  AssertionFailedError: require('./errors/assertion-failed-error'),
   BadRequestError: require('./errors/bad-request-error'),
   ConflictError: require('./errors/conflict-error'),
   ForbiddenError: require('./errors/forbidden-error'),
