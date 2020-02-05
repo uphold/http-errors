@@ -33,16 +33,17 @@ try {
 
 Below is the list of all available errors:
 
-| Name                    | Code | Default message     |
-|:------------------------|:-----|:--------------------|
-| BadRequestError         | 400  | Bad Request         |
-| ConflictError           | 409  | Conflict            |
-| ForbiddenError          | 403  | Forbidden           |
-| GoneError               | 410  | Gone                |
-| NotFoundError           | 404  | Not Found           |
-| ServiceUnavailableError | 503  | Service Unavailable |
-| UnauthorizedError       | 401  | Unauthorized        |
-| ValidationFailedError   | 400  | Validation Failed   |
+| Name                    | Code | Default message       |
+|:------------------------|:-----|:----------------------|
+| AssertionFailedError    | 500  | Internal Server Error |
+| BadRequestError         | 400  | Bad Request           |
+| ConflictError           | 409  | Conflict              |
+| ForbiddenError          | 403  | Forbidden             |
+| GoneError               | 410  | Gone                  |
+| NotFoundError           | 404  | Not Found             |
+| ServiceUnavailableError | 503  | Service Unavailable   |
+| UnauthorizedError       | 401  | Unauthorized          |
+| ValidationFailedError   | 400  | Validation Failed     |
 
 ## Usage
 
