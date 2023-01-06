@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@types/standard-error@*":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/standard-error/-/standard-error-1.1.0.tgz#7625b53aa5e60ea510b11452bdcc6731b7775bf6"
+  integrity sha512-lZshsx/QFLUJcu9prwm3Gtsl+b38HAqO6XUGH8PGwSmiswQhscd2MKrfk3LX3W3HyvNVUKcpsiuhU9r8DX32ww==
+
+"@types/standard-http-error@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/standard-http-error/-/standard-http-error-2.0.1.tgz#1e63bd8c33bf24890a943d657870477f55bbbad6"
+  integrity sha512-iJkRPfGo0TSFwDW6TxBm5wf+SsBUE9NoRvfeeS2IZcKf3iIX42TLOkzDhSaU6WZ2fUHpN2f5RMYEi+xbBp7eYw==
+  dependencies:
+    "@types/standard-error" "*"
+
 "@uphold/github-changelog-generator@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-0.7.0.tgz#1972dcb8c1d5c32b396d1a8960d98d683e274f3b"
@@ -2455,9 +2467,10 @@ sshpk@^1.7.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/standard-error/-/standard-error-1.1.0.tgz#23e5168fa1c0820189e5812701a79058510d0d34"
 
-standard-http-error@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/standard-http-error/-/standard-http-error-2.0.0.tgz#b59295c13f67fffa4b78973f2e522dc1426b3df5"
+standard-http-error@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/standard-http-error/-/standard-http-error-2.0.1.tgz#f8ae9172e3cef9cb38d2e7084a1925f57a7c34bd"
+  integrity sha512-DX/xPIoyXQTuY6BMZK4Utyi4l3A4vFoafsfqrU6/dO4Oe/59c7PyqPd2IQj9m+ZieDg2K3RL9xOYJsabcD9IUA==
   dependencies:
     standard-error ">= 1.1.0 < 2"
 
