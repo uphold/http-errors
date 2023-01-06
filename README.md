@@ -42,6 +42,7 @@ Below is the list of all available errors:
 | GoneError               | 410  | Gone                  |
 | NotFoundError           | 404  | Not Found             |
 | ServiceUnavailableError | 503  | Service Unavailable   |
+| TooManyRequestsError    | 429  | Too Many Requests     |
 | UnauthorizedError       | 401  | Unauthorized          |
 | ValidationFailedError   | 400  | Validation Failed     |
 

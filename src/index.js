@@ -13,6 +13,7 @@ module.exports = {
   HttpError: require('./errors/http-error'),
   NotFoundError: require('./errors/not-found-error'),
   ServiceUnavailableError: require('./errors/service-unavailable-error'),
+  TooManyRequestsError: require('./errors/too-many-requests-error'),
   UnauthorizedError: require('./errors/unauthorized-error'),
   ValidationFailedError: require('./errors/validation-failed-error')
 };
