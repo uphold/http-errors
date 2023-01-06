@@ -18,7 +18,8 @@
     "lint"
   ],
   "dependencies": {
-    "standard-http-error": "2.0.0"
+    "@types/standard-http-error": "^2.0.1",
+    "standard-http-error": "2.0.1"
   },
   "devDependencies": {
     "@uphold/github-changelog-generator": "^0.7.0",
