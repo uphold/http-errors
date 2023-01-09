@@ -1,5 +1,8 @@
 # Changelog
 
+## [v1.4.0](https://github.com/uphold/http-errors/releases/tag/v1.4.0) (2023-01-09)
+- Add 429 http error and http types [\#32](https://github.com/uphold/http-errors/pull/32) ([arop](https://github.com/arop))
+
 ## [v1.3.0](https://github.com/uphold/http-errors/releases/tag/v1.3.0) (2020-03-19)
 - Add AssertionFailedError [\#18](https://github.com/uphold/http-errors/pull/18) ([eduardoconceicao](https://github.com/eduardoconceicao))
 
