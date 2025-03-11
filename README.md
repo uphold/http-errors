@@ -41,6 +41,7 @@ Below is the list of all available errors:
 | ForbiddenError          | 403  | Forbidden             |
 | GoneError               | 410  | Gone                  |
 | NotFoundError           | 404  | Not Found             |
+| NotImplementedError     | 501  | Not Implemented
 | ServiceUnavailableError | 503  | Service Unavailable   |
 | TooManyRequestsError    | 429  | Too Many Requests     |
 | UnauthorizedError       | 401  | Unauthorized          |
