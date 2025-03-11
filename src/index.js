@@ -12,6 +12,7 @@ module.exports = {
   GoneError: require('./errors/gone-error'),
   HttpError: require('./errors/http-error'),
   NotFoundError: require('./errors/not-found-error'),
+  NotImplementedError: require('./errors/not-implemented-error'),
   ServiceUnavailableError: require('./errors/service-unavailable-error'),
   TooManyRequestsError: require('./errors/too-many-requests-error'),
   UnauthorizedError: require('./errors/unauthorized-error'),
