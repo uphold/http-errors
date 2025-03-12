@@ -139,11 +139,10 @@ A full coverage report will be generated on `/coverage` folder.
 
 Please create a PR with a description of the changes, its motivation and impacted areas, making sure the build passes.
 
-## Release
+## Release process
 
-```sh
-yarn release [<version> | major | minor | patch]
-```
+The release of a version is automated via the [release](https://github.com/uphold/uphold-validator.js/.github/workflows/release.yml) GitHub workflow.
+Run it by clicking the "Run workflow" button.
 
 ## License
 
@@ -151,5 +150,5 @@ MIT
 
 [npm-image]: https://img.shields.io/npm/v/@uphold/http-errors.svg
 [npm-url]: https://www.npmjs.com/package/@uphold/http-errors
-[tests-image]: https://github.com/uphold/uphold-http-errors/actions/workflows/tests.yaml/badge.svg?branch=master
-[tests-url]: https://github.com/uphold/uphold-http-errors/actions/workflows/tests.yaml
+[tests-image]: https://github.com/uphold/http-errors/actions/workflows/tests.yaml/badge.svg?branch=master
+[tests-url]: https://github.com/uphold/http-errors/actions/workflows/tests.yaml
