@@ -5,15 +5,16 @@
   "license": "MIT",
   "author": "Uphold",
   "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "types": "types/index.d.ts",
   "scripts": {
-    "changelog": "github-changelog-generator --future-release=v$npm_package_version > CHANGELOG.md",
     "lint": "eslint",
-    "release": "npm version $1 -m 'Release %s'",
+    "release": "release-it",
     "test": "node --test test/**/*_test.js",
     "test:coverage": "NODE_V8_COVERAGE=coverage node --test --experimental-test-coverage test/**/*_test.js",
-    "test:watch": "node --test --watch test/**/*_test.js",
-    "version": "yarn changelog && git add CHANGELOG.md"
+    "test:watch": "node --test --watch test/**/*_test.js"
   },
   "pre-commit": [
     "lint"
@@ -23,11 +24,12 @@
     "standard-http-error": "2.0.1"
   },
   "devDependencies": {
-    "@uphold/github-changelog-generator": "^0.7.0",
+    "@uphold/github-changelog-generator": "^4.0.2",
     "eslint": "^9.28.0",
     "eslint-config-uphold": "^6.5.1",
     "pre-commit": "1.2.2",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "release-it": "^19.0.3"
   },
   "engines": {
     "node": ">=20"
