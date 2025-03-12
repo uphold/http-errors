@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      VERSION_BUMP:
+        description: 'The version bump'
+        type: choice
+        options:
+        - major
+        - minor
+        - patch
+        default: minor
+        required: true
+
+jobs:
+  release:
+    uses: uphold/.github/.github/workflows/reusable-release.yaml@v1
+    secrets: inherit
+    with:
+      package_manager: yarn
+      version_bump: ${{ github.event.inputs.VERSION_BUMP }}
