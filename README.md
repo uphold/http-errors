@@ -7,13 +7,13 @@ This module provides a set of errors based on [standard-http-error](https://www.
 Install **@uphold/http-errors** with yarn:
 
 ```sh
-$ yarn add @uphold/http-errors
+yarn add @uphold/http-errors
 ```
 
 Alternatively, with npm:
 
 ```sh
-$ npm i @uphold/http-errors
+npm i @uphold/http-errors
 ```
 
 ## Errors
@@ -34,14 +34,14 @@ try {
 Below is the list of all available errors:
 
 | Name                    | Code | Default message       |
-|:------------------------|:-----|:----------------------|
+| :---------------------- | :--- | :-------------------- |
 | AssertionFailedError    | 500  | Internal Server Error |
 | BadRequestError         | 400  | Bad Request           |
 | ConflictError           | 409  | Conflict              |
 | ForbiddenError          | 403  | Forbidden             |
 | GoneError               | 410  | Gone                  |
 | NotFoundError           | 404  | Not Found             |
-| NotImplementedError     | 501  | Not Implemented
+| NotImplementedError     | 501  | Not Implemented       |
 | ServiceUnavailableError | 503  | Service Unavailable   |
 | TooManyRequestsError    | 429  | Too Many Requests     |
 | UnauthorizedError       | 401  | Unauthorized          |
@@ -60,7 +60,7 @@ function authorize(user, permission) {
   }
 
   if (permission === 'admin' && user.role !== 'admin') {
-    throw new ForbiddenError('Only admins allowed', { role: 'admin' })
+    throw new ForbiddenError('Only admins allowed', { role: 'admin' });
   }
 
   return true;
@@ -113,16 +113,16 @@ try {
 Use the `test` script to run the test suite:
 
 ```sh
-$ yarn test
+yarn test
 ```
 
 To test and check coverage use the `cover` script:
 
 ```sh
-$ yarn cover
+yarn cover
 ```
 
-A full coverage report will be generated on *test/coverage* folder.
+A full coverage report will be generated on _test/coverage_ folder.
 
 ## Contributing
 
@@ -131,7 +131,7 @@ Please create a PR with a description of the changes, its motivation and impacte
 ## Release
 
 ```sh
-$ yarn release [<version> | major | minor | patch]
+yarn release [<version> | major | minor | patch]
 ```
 
 ## License
