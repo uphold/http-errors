@@ -2,6 +2,11 @@
 
 This module provides a set of errors based on [standard-http-error](https://www.npmjs.com/package/standard-http-error), reducing the boilerplate of adding error classes for the most common HTTP errors.
 
+## Status
+
+[![npm version][npm-image]][npm-url]
+[![build status][tests-image]][tests-url]
+
 ## Setup
 
 Install **@uphold/http-errors** with yarn:
@@ -116,13 +121,19 @@ Use the `test` script to run the test suite:
 yarn test
 ```
 
-To test and check coverage use the `cover` script:
+To run the tests on watch mode, use the `test:watch` script:
 
 ```sh
-yarn cover
+yarn test:watch
 ```
 
-A full coverage report will be generated on _test/coverage_ folder.
+To test and check coverage use the `test:coverage` script:
+
+```sh
+yarn test:coverage
+```
+
+A full coverage report will be generated on `/coverage` folder.
 
 ## Contributing
 
@@ -137,3 +148,8 @@ yarn release [<version> | major | minor | patch]
 ## License
 
 MIT
+
+[npm-image]: https://img.shields.io/npm/v/@uphold/http-errors.svg
+[npm-url]: https://www.npmjs.com/package/@uphold/http-errors
+[tests-image]: https://github.com/uphold/uphold-http-errors/actions/workflows/tests.yaml/badge.svg?branch=master
+[tests-url]: https://github.com/uphold/uphold-http-errors/actions/workflows/tests.yaml

@@ -5,12 +5,13 @@
  */
 
 const { BadRequestError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Bad Request" error.
+ * Test `Bad Request` error.
  */
 
 describe('BadRequestError', () => {
-  test(BadRequestError, 400, 'Bad Request');
+  testHttpError(BadRequestError, 400, 'Bad Request');
 });

@@ -5,12 +5,13 @@
  */
 
 const { ServiceUnavailableError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Service Unavailable" error.
+ * Test `Service Unavailable` error.
  */
 
 describe('ServiceUnavailableError', () => {
-  test(ServiceUnavailableError, 503, 'Service Unavailable');
+  testHttpError(ServiceUnavailableError, 503, 'Service Unavailable');
 });

@@ -5,31 +5,32 @@
  */
 
 const { HttpError } = require('../../src');
+const { it } = require('node:test');
 
 /**
- * Test HTTP error.
+ * Test `HTTP` error.
  */
 
 module.exports = (Error, code, message, testArguments = true) => {
-  it('should inherit from `HttpError`', () => {
-    expect(new Error()).toBeInstanceOf(HttpError);
+  it('should inherit from `HttpError`', ({ assert }) => {
+    assert.ok(new Error() instanceof HttpError);
   });
 
-  it(`should have a ${code} code`, () => {
-    expect(new Error().code).toBe(code);
+  it(`should have a ${code} code`, ({ assert }) => {
+    assert.equal(new Error().code, code);
   });
 
-  it(`should have a "${message}" message`, () => {
-    expect(new Error().message).toBe(message);
+  it(`should have a "${message}" message`, ({ assert }) => {
+    assert.equal(new Error().message, message);
   });
 
   if (testArguments) {
-    it('should override default message', () => {
-      expect(new Error('foo').message).toBe('foo');
+    it('should override default message', ({ assert }) => {
+      assert.equal(new Error('foo').message, 'foo');
     });
 
-    it('should add custom properties', () => {
-      expect(new Error({ foo: 'bar' }).foo).toBe('bar');
+    it('should add custom properties', ({ assert }) => {
+      assert.equal(new Error({ foo: 'bar' }).foo, 'bar');
     });
   }
 };

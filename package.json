@@ -8,10 +8,11 @@
   "types": "types/index.d.ts",
   "scripts": {
     "changelog": "github-changelog-generator --future-release=v$npm_package_version > CHANGELOG.md",
-    "cover": "yarn test -- --coverage",
     "lint": "eslint",
     "release": "npm version $1 -m 'Release %s'",
-    "test": "jest --config jest.json",
+    "test": "node --test test/**/*_test.js",
+    "test:coverage": "NODE_V8_COVERAGE=coverage node --test --experimental-test-coverage test/**/*_test.js",
+    "test:watch": "node --test --watch test/**/*_test.js",
     "version": "yarn changelog && git add CHANGELOG.md"
   },
   "pre-commit": [
@@ -25,11 +26,10 @@
     "@uphold/github-changelog-generator": "^0.7.0",
     "eslint": "^9.28.0",
     "eslint-config-uphold": "^6.5.1",
-    "jest": "20.0.4",
     "pre-commit": "1.2.2",
     "prettier": "^3.5.3"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=20"
   }
 }

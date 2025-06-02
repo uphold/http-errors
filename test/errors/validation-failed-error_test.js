@@ -5,16 +5,17 @@
  */
 
 const { ValidationFailedError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe, test } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Validation Failed" error.
+ * Test `Validation Failed` error.
  */
 
 describe('ValidationFailedError', () => {
-  test(ValidationFailedError, 400, 'Validation Failed', false);
+  testHttpError(ValidationFailedError, 400, 'Validation Failed', false);
 
-  it('should set given `errors`', () => {
-    expect(new ValidationFailedError('foo').errors).toBe('foo');
+  test('should set given `errors`', ({ assert }) => {
+    assert.strictEqual(new ValidationFailedError('foo').errors, 'foo');
   });
 });

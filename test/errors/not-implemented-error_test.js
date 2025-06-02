@@ -5,12 +5,13 @@
  */
 
 const { NotImplementedError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Not Implemented" error.
+ * Test `Not Implemented` error.
  */
 
 describe('NotImplementedError', () => {
-  test(NotImplementedError, 501, 'Not Implemented', false);
+  testHttpError(NotImplementedError, 501, 'Not Implemented', false);
 });
