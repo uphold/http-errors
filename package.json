@@ -24,10 +24,10 @@
     "standard-http-error": "2.0.1"
   },
   "devDependencies": {
+    "@fastify/pre-commit": "^2.2.0",
     "@uphold/github-changelog-generator": "^4.0.2",
-    "eslint": "^9.28.0",
-    "eslint-config-uphold": "^6.5.1",
-    "pre-commit": "1.2.2",
+    "eslint": "~9.28.0",
+    "eslint-config-uphold": "^6.5.2",
     "prettier": "^3.5.3",
     "release-it": "^19.0.3"
   },
