@@ -5,12 +5,13 @@
  */
 
 const { GoneError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Gone" error.
+ * Test `Gone` error.
  */
 
 describe('GoneError', () => {
-  test(GoneError, 410, 'Gone');
+  testHttpError(GoneError, 410, 'Gone');
 });

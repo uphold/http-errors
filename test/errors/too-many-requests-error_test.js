@@ -5,12 +5,13 @@
  */
 
 const { TooManyRequestsError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "TooManyRequestsError" error.
+ * Test `TooManyRequestsError` error.
  */
 
 describe('TooManyRequestsError', () => {
-  test(TooManyRequestsError, 429, 'Too Many Requests');
+  testHttpError(TooManyRequestsError, 429, 'Too Many Requests');
 });

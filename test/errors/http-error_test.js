@@ -5,14 +5,15 @@
  */
 
 const { HttpError } = require('../../src');
+const { describe, it } = require('node:test');
 const StandardHttpError = require('standard-http-error');
 
 /**
- * Test HTTP error.
+ * Test `HTTP` error.
  */
 
 describe('HttpError', () => {
-  it('should inherit from `StandardHttpError`', () => {
-    expect(new HttpError(400)).toBeInstanceOf(StandardHttpError);
+  it('should inherit from `StandardHttpError`', ({ assert }) => {
+    assert.ok(new HttpError(400) instanceof StandardHttpError);
   });
 });

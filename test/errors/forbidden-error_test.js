@@ -5,12 +5,13 @@
  */
 
 const { ForbiddenError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Forbidden" error.
+ * Test `Forbidden` error.
  */
 
 describe('ForbiddenError', () => {
-  test(ForbiddenError, 403, 'Forbidden');
+  testHttpError(ForbiddenError, 403, 'Forbidden');
 });

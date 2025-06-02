@@ -5,16 +5,17 @@
  */
 
 const { AssertionFailedError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe, it } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Assertion Failed" error.
+ * Test `Assertion Failed` error.
  */
 
 describe('AssertionFailedError', () => {
-  test(AssertionFailedError, 500, 'Assertion Failed', false);
+  testHttpError(AssertionFailedError, 500, 'Assertion Failed', false);
 
-  it('should set given `errors`', () => {
-    expect(new AssertionFailedError('foo').errors).toBe('foo');
+  it('should set given `errors`', ({ assert }) => {
+    assert.equal(new AssertionFailedError('foo').errors, 'foo');
   });
 });

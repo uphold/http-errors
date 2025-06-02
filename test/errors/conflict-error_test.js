@@ -5,12 +5,13 @@
  */
 
 const { ConflictError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Conflict" error.
+ * Test `Conflict` error.
  */
 
 describe('ConflictError', () => {
-  test(ConflictError, 409, 'Conflict');
+  testHttpError(ConflictError, 409, 'Conflict');
 });

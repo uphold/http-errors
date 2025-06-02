@@ -5,12 +5,13 @@
  */
 
 const { UnauthorizedError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Unauthorized" error.
+ * Test `Unauthorized` error.
  */
 
 describe('UnauthorizedError', () => {
-  test(UnauthorizedError, 401, 'Unauthorized');
+  testHttpError(UnauthorizedError, 401, 'Unauthorized');
 });

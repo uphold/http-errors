@@ -5,12 +5,13 @@
  */
 
 const { NotFoundError } = require('../../src');
-const test = require('../utils/test-http-error');
+const { describe } = require('node:test');
+const testHttpError = require('../utils/test-http-error');
 
 /**
- * Test "Not Found" error.
+ * Test `Not Found` error.
  */
 
 describe('NotFoundError', () => {
-  test(NotFoundError, 404, 'Not Found');
+  testHttpError(NotFoundError, 404, 'Not Found');
 });
