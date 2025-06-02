@@ -1,7 +1,7 @@
 {
   "name": "@uphold/http-errors",
   "version": "1.4.0",
-  "description": "Set of errors based on http-standard-error",
+  "description": "Set of errors based on standard-http-error",
   "license": "MIT",
   "author": "Uphold",
   "main": "src/index.js",
@@ -9,7 +9,7 @@
   "scripts": {
     "changelog": "github-changelog-generator --future-release=v$npm_package_version > CHANGELOG.md",
     "cover": "yarn test -- --coverage",
-    "lint": "eslint --cache src test",
+    "lint": "eslint",
     "release": "npm version $1 -m 'Release %s'",
     "test": "jest --config jest.json",
     "version": "yarn changelog && git add CHANGELOG.md"
@@ -23,10 +23,11 @@
   },
   "devDependencies": {
     "@uphold/github-changelog-generator": "^0.7.0",
-    "eslint": "^5.0.1",
-    "eslint-config-uphold": "^0.1.1",
+    "eslint": "^9.28.0",
+    "eslint-config-uphold": "^6.5.1",
     "jest": "20.0.4",
-    "pre-commit": "1.2.2"
+    "pre-commit": "1.2.2",
+    "prettier": "^3.5.3"
   },
   "engines": {
     "node": ">=4"
