@@ -1,6 +1,6 @@
 {
   "name": "@uphold/http-errors",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Set of errors based on standard-http-error",
   "license": "MIT",
   "author": "Uphold",

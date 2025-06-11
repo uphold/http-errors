@@ -1,5 +1,13 @@
 # Changelog
 
+## [v2.0.0](https://github.com/uphold/http-errors/releases/tag/v2.0.0) (2025-06-11)
+
+- Update all dependencies to fix vulnerabilities [\#42](https://github.com/uphold/http-errors/pull/42) ([risantos](https://github.com/risantos))
+- Add Release GitHub action [\#39](https://github.com/uphold/http-errors/pull/39) ([Nethanos](https://github.com/Nethanos))
+- Add Tests workflow and replace Jest with `node:test` [\#40](https://github.com/uphold/http-errors/pull/40) ([risantos](https://github.com/risantos))
+- Update `eslint-config-uphold@6.5.1` [\#41](https://github.com/uphold/http-errors/pull/41) ([risantos](https://github.com/risantos))
+- Add support for `Not Implemented` error [\#38](https://github.com/uphold/http-errors/pull/38) ([Nethanos](https://github.com/Nethanos))
+
 ## [v1.4.0](https://github.com/uphold/http-errors/releases/tag/v1.4.0) (2023-01-09)
 - Add 429 http error and http types [\#32](https://github.com/uphold/http-errors/pull/32) ([arop](https://github.com/arop))
 
