@@ -141,7 +141,7 @@ Please create a PR with a description of the changes, its motivation and impacte
 
 ## Release process
 
-The release of a version is automated via the [release](https://github.com/uphold/uphold-validator.js/.github/workflows/release.yml) GitHub workflow.
+The release of a version is automated via the [release](https://github.com/uphold/http-errors/.github/workflows/release.yml) GitHub workflow.
 Run it by clicking the "Run workflow" button.
 
 ## License
