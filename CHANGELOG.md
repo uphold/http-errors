@@ -1,5 +1,9 @@
 # Changelog
 
+## [v2.0.1](https://github.com/uphold/http-errors/releases/tag/v2.0.1) (2025-06-12)
+
+- Fix typo in `README` regarding release workflow link [\#43](https://github.com/uphold/http-errors/pull/43) ([risantos](https://github.com/risantos))
+
 ## [v2.0.0](https://github.com/uphold/http-errors/releases/tag/v2.0.0) (2025-06-11)
 
 - Update all dependencies to fix vulnerabilities [\#42](https://github.com/uphold/http-errors/pull/42) ([risantos](https://github.com/risantos))
