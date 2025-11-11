@@ -1,5 +1,9 @@
 # Changelog
 
+## [v2.0.2](https://github.com/uphold/http-errors/releases/tag/v2.0.2) (2025-11-11)
+
+- Add `types` to `files` in `package.json` [\#44](https://github.com/uphold/http-errors/pull/44) ([josecarlosbrandao](https://github.com/josecarlosbrandao))
+
 ## [v2.0.1](https://github.com/uphold/http-errors/releases/tag/v2.0.1) (2025-06-12)
 
 - Fix typo in `README` regarding release workflow link [\#43](https://github.com/uphold/http-errors/pull/43) ([risantos](https://github.com/risantos))
