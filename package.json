@@ -6,7 +6,8 @@
   "author": "Uphold",
   "main": "src/index.js",
   "files": [
-    "src"
+    "src",
+    "types"
   ],
   "types": "types/index.d.ts",
   "scripts": {
