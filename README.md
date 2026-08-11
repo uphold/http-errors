@@ -9,16 +9,10 @@ This module provides a set of errors based on [standard-http-error](https://www.
 
 ## Setup
 
-Install **@uphold/http-errors** with yarn:
+Install **@uphold/http-errors** with npm:
 
 ```sh
-yarn add @uphold/http-errors
-```
-
-Alternatively, with npm:
-
-```sh
-npm i @uphold/http-errors
+npm install @uphold/http-errors
 ```
 
 ## Errors
@@ -118,19 +112,19 @@ try {
 Use the `test` script to run the test suite:
 
 ```sh
-yarn test
+npm test
 ```
 
 To run the tests on watch mode, use the `test:watch` script:
 
 ```sh
-yarn test:watch
+npm run test:watch
 ```
 
 To test and check coverage use the `test:coverage` script:
 
 ```sh
-yarn test:coverage
+npm run test:coverage
 ```
 
 A full coverage report will be generated on `/coverage` folder.

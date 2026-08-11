@@ -27,8 +27,9 @@
   "devDependencies": {
     "@fastify/pre-commit": "^2.2.0",
     "@uphold/github-changelog-generator": "^4.0.2",
-    "eslint": "~9.28.0",
+    "eslint": "~9.39.2",
     "eslint-config-uphold": "^6.5.2",
+    "eslint-plugin-mocha": "^11.3.0",
     "prettier": "^3.5.3",
     "release-it": "^19.0.3"
   },
