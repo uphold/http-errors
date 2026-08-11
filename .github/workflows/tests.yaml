@@ -20,12 +20,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node }}
+        cache: npm
 
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: npm ci
 
     - name: Run lint
-      run: yarn lint
+      run: npm run lint
 
     - name: Run tests
-      run: yarn test:coverage
+      run: npm run test:coverage
