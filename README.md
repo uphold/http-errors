@@ -34,7 +34,7 @@ Below is the list of all available errors:
 
 | Name                    | Code | Default message       |
 | :---------------------- | :--- | :-------------------- |
-| AssertionFailedError    | 500  | Internal Server Error |
+| AssertionFailedError    | 500  | Assertion Failed       |
 | BadRequestError         | 400  | Bad Request           |
 | ConflictError           | 409  | Conflict              |
 | ForbiddenError          | 403  | Forbidden             |
@@ -67,6 +67,8 @@ function authorize(user, permission) {
 ```
 
 All errors accept a message and a set of properties as arguments, or both:
+
+> `AssertionFailedError` and `ValidationFailedError` additionally accept a **single** argument, which is assigned to `error.errors`. This is the form used to carry a `validator.js` violation tree. When two or more arguments are given they follow the `(message, properties)` contract below.
 
 ```js
 const { BadRequestError } = require('@uphold/http-errors');
@@ -135,7 +137,7 @@ Please create a PR with a description of the changes, its motivation and impacte
 
 ## Release process
 
-The release of a version is automated via the [release](https://github.com/uphold/http-errors/.github/workflows/release.yml) GitHub workflow.
+The release of a version is automated via the [release](https://github.com/uphold/http-errors/.github/workflows/release.yaml) GitHub workflow.
 Run it by clicking the "Run workflow" button.
 
 ## License
